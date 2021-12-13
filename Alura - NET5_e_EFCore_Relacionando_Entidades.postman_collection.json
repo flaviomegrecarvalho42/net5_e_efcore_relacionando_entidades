@@ -1,0 +1,694 @@
+{
+	"info": {
+		"_postman_id": "2ca2ce32-38ba-450e-bceb-37ca2609102b",
+		"name": "Alura - NET5_e_EFCore_Relacionando_Entidades",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FilmeAPI",
+			"item": [
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Deletar Cinema",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/Cinema/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Cinema",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar Endereço",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/Endereco/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Endereco",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar Filme",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/Filme/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Filme",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar Gerente",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/Gerente/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Gerente",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Listar Cinemas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Cinema",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Cinema"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Cinemas por Filme",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Cinema?nomeDoFilme=O Senhor dos Aneis",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Cinema"
+									],
+									"query": [
+										{
+											"key": "nomeDoFilme",
+											"value": "O Senhor dos Aneis"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Cinema por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Cinema/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Cinema",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Endereços",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/Endereco",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Endereco"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Endereço por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Endereco/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Endereco",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Filmes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/Filme",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Filme"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Filmes por Classificação Etária",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/Filme?classificacaoEtaria=12",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Filme"
+									],
+									"query": [
+										{
+											"key": "classificacaoEtaria",
+											"value": "12"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Filme por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Filme/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Filme",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Gerentes",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Gerente",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Gerente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Gerente por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Gerente/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Gerente",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Sessoes",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Sessao",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Sessao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Sessao por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Sessao/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Sessao",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Incluir Cinema",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n    \"Nome\": \"Alura Cinema 2\",\r\n    \"EnderecoId\": 3,\r\n    \"GerenteId\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Cinema",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Cinema"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Incluir Endereço",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n    \"Logradouro\": \"Rua Henrique Scheid\",\r\n    \"Bairro\": \"Engenho de Dentro\",\r\n    \"Numero\": 21\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Endereco",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Endereco"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Incluir Filme",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n    \"Titulo\": \"As torres gêmeas\",\r\n    \"Diretor\": \"Qualquer\",\r\n    \"Genero\": \"Documentário\",\r\n    \"Duracao\": 180,\r\n    \"ClassificacaoEtaria\": 16\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Filme",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Filme"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Incluir Gerente",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n    \"Nome\": \"Flavio Megre Carvalho\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Gerente",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Gerente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Incluir Sessao",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"CinemaId\": 5,\r\n    \"FilmeId\": 3,\r\n    \"HorarioDeEncerramento\": \"2002-01-01T21:00:00Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Sessao",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Sessao"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "Atualizar Cinema",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n    \"Logradouro\": \"Homen Aranha\",\r\n    \"Bairro\": \"George Lucas\",\r\n    \"Numero\": 120\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Endereco/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Endereco",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar Endereço",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n    \"Titulo\": \"Homen Aranha\",\r\n    \"Diretor\": \"George Lucas\",\r\n    \"Genero\": \"Aventura\",\r\n    \"Duracao\": 120\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Filme/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Filme",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar Filme",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n    \"Nome\": \"Homen Aranha\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/Cinema/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"Cinema",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
